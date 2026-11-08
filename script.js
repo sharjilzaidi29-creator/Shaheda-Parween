@@ -50,7 +50,7 @@ const center=el=>{const r=el.getBoundingClientRect();return[r.left+r.width/2,r.t
 for(let i=0;i<9;i++)setTimeout(()=>{snd('whistle');rocketUp(W*(.1+.8*Math.random()),H+10,H*(.1+.3*Math.random()))},300+i*550);
 setInterval(()=>{if(Math.random()<.7)rocketUp(W*(.1+.8*Math.random()),H+10,H*(.1+.35*Math.random()))},3200);
 async function type(el,caret,text,d){if(caret)caret.style.display='inline-block';for(const ch of text){el.textContent+=ch;await sleep(d+Math.random()*60)}if(caret)caret.style.display='none'}
-(async()=>{await sleep(500);await type($('#t1'),$('#c1'),'Happy Diwali',120);await sleep(200);await type($('#t2'),null,'Sharjil Sheikh',100);
+(async()=>{await sleep(500);await type($('#t1'),$('#c1'),'Happy Diwali',120);await sleep(200);await type($('#t2'),null,'Shaheda Parween',100);
   const[x,y]=center($('#t1'));for(let i=0;i<12;i++)setTimeout(()=>sparkle(x+(Math.random()-.5)*W*.6,y+(Math.random()-.5)*50,8),i*120)})();
 
 /* ---------- Diyas ---------- */
